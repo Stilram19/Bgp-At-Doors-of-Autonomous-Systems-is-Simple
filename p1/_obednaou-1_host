@@ -1,0 +1,4 @@
+FROM alpine:latest
+
+# install curl & install latest list of packages and delete it from the cache 
+RUN apk add --no-cache curl

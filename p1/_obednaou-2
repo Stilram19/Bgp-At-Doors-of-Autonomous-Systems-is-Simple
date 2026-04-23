@@ -1,0 +1,9 @@
+FROM frrouting/frr
+
+COPY daemons.conf /etc/frr/daemons
+COPY frr.conf /etc/frr/frr.conf
+COPY start.sh /start.sh
+
+RUN chmod +x /start.sh
+
+CMD ["/start.sh"]
