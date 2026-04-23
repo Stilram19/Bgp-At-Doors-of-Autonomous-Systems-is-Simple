@@ -1,3 +1,10 @@
-# ip addr add 10.0.0.1/24 dev eth0 (inside the router)
-# ip addr add 10.0.0.2/24 dev eth0 (inside the host)
+# COMMANDS:
+
+# ip addr add 10.0.0.1/30 dev eth0 (inside the router)
+# ip addr add 10.0.0.2/30 dev eth0 (inside the host)
 # ip route add default via 10.0.0.1 (inside the host to set the default gateway)
+
+# INFOS:
+
+# topology type is point-to-point
+# both nodes are in same subnet (/30 gives exactly two usable ip addresses)
