@@ -1,5 +1,7 @@
 FROM frrouting/frr
 
+RUN apk add --no-cache tcpdump
+
 COPY daemons.conf /etc/frr/daemons
 COPY frr.conf /etc/frr/frr.conf
 COPY start.sh /start.sh
